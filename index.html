@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSC Boys FC - Footer Ad Slim</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding: 20px;
+      min-height: 90vh;
+    }
+
+    /* Slim Footer Ad Styles */
+    #footer-ad-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #00ffbb;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 15px;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      font-size: 14px;
+    }
+
+    #footer-ad-container img {
+      height: 40px;
+      margin-right: 12px;
+      border-radius: 4px;
+    }
+
+    #footer-ad-container p {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    #footer-ad-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Optional Close Button */
+    #close-footer-ad {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 500px) {
+      #footer-ad-container p {
+        font-size: 12px;
+      }
+
+      #footer-ad-container img {
+        height: 30px;
+        margin-right: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <!-- Slim Footer Ad -->
+  <footer>
+    <div id="footer-ad-container">
+      <a href="https://musicdistribution.umijam.com/share/MTAwMDAwNzkzMTg3"target="_blank" id="footer-ad-link">
+        <img src="example.png" alt="CSC Boys FC">
+      <p style="color: black">Stream Jodada on all streaming platforms</p> 
+      </a>
+      <button id="close-footer-ad">&times;</button>
+    </div>
+  </footer>
+
+  <script>
+    // Close footer ad on button click
+    document.getElementById("close-footer-ad").onclick = function () {
+      document.getElementById("footer-ad-container").style.display = "none";
+    };
+  </script>
+
+</body>
+</html>
